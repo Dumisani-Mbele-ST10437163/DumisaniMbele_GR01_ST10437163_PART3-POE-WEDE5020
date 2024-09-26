@@ -1,0 +1,348 @@
+@media screen and (max-width: 1920px) {
+
+    body {
+        font-family: 'Hind Siliguri';
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: #325739;
+    }
+
+
+    footer {
+        position: sticky;
+        top: 100%;
+        background-color: #76c573;
+        padding-top: 20px;
+    }
+
+    .imagecontainer {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        padding: 5%;
+    }
+
+    hr {
+        border: 2px solid #46774f;
+        border-radius: 5px;
+        opacity: 30%;
+    }
+
+    .container {
+        width: 50%;
+        height: 50%;
+        text-align: center;
+
+    }
+
+    .lineBox {
+        width: 1350px;
+        height: 10px;
+        padding-top: 11%;
+        padding-bottom: 2%;
+        margin: auto;
+    }
+
+    .bg-color {
+        height: 300%;
+        width: 100%;
+        background-image: linear-gradient(rgb(220, 255, 220), #97c088);
+    }
+
+    .center {
+        text-align: center;
+
+    }
+
+    .spacing {
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        width: 50%;
+        overflow: hidden;
+        margin-left: 27%;
+        margin-top: 0%;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin-left: 5%;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #acde9f;
+        color: rgb(47, 131, 51);
+        border-radius: 5%;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #83bc88;
+        color: white;
+        border-radius: 5%;
+    }
+
+    .image1 {
+        margin-left: 295px;
+        border-radius: 15px;
+    }
+
+    .image2 {
+        margin-left: 55px;
+        border-radius: 15px;
+
+    }
+
+    .image3 {
+        margin-left: 40px;
+        border-radius: 15px;
+
+    }
+
+    .imageSpace {
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .imgBorder {
+        border-radius: 8px;
+    }
+
+
+    .heading1 {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .heading2 {
+        text-align: center;
+        margin-top: 1%;
+        font-size: 36px;
+    }
+
+    .heading3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .heading4 {
+        font-size: 24px;
+        text-align: center;
+        word-spacing: 350px;
+    }
+
+    .par {
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .par1 {
+        margin-left: 175px;
+        font-size: 18px;
+        word-spacing: 375px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:960px) {
+
+    body {
+        font-family: 'Hind Siliguri';
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: #325739;
+    }
+
+    footer {
+        position: sticky;
+        top: 100%;
+        background-color: #76c573;
+        padding-top: 20px;
+    }
+
+    .imagecontainer {
+        max-width: 30%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scale img {
+        max-width: 300%;
+        max-height: 300%;
+    }
+
+    .scale {
+        height: 100%;
+        width: 100%;
+    }
+
+    hr {
+        border: 8px solid #46774f;
+        border-radius: 5px;
+        opacity: 30%;
+    }
+
+    .scale {
+        max-width: 400%;
+        max-width: 400%;
+    }
+
+    .container {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .lineBox {
+        width: 1200px;
+        height: 10px;
+        padding-top: 11%;
+        padding-bottom: 2%;
+        padding-left: 90px;
+    }
+
+    .bg-color {
+        height: 100%;
+        width: 380%;
+        background-image: linear-gradient(rgb(220, 255, 220), #97c088);
+    }
+
+
+    .center {
+        text-align: center;
+
+    }
+
+    .spacing {
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        width: 80%;
+        overflow: hidden;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    /* Style the links inside the navigation bar */
+
+    .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 60px;
+        margin-left: 5%;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #acde9f;
+        color: rgb(47, 131, 51);
+        border-radius: 5%;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #83bc88;
+        color: white;
+        border-radius: 5%;
+    }
+
+    .image1 {
+        margin-left: 20px;
+        border-radius: 15px;
+    }
+
+    .image2 {
+        margin-left: 55px;
+        border-radius: 15px;
+
+    }
+
+    .image3 {
+        margin-left: 40px;
+        border-radius: 15px;
+
+    }
+
+    .imageSpace {
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .imgBorder {
+        border-radius: 8px;
+    }
+
+    .footer p {
+        font-size: 60px;
+    }
+
+    .heading1 {
+        margin-top: 50px;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 70px;
+    }
+
+    .heading2 {
+        text-align: center;
+        margin-top: 1%;
+        font-size: 100px;
+    }
+
+    .heading3 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .heading4 {
+        font-size: 60px;
+        text-align: center;
+        word-spacing: 200px;
+        margin-right: 20px;
+    }
+
+    .par {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .par1 {
+        margin-left: 200px;
+        font-size: 18px;
+        word-spacing: 375px;
+    }
+}
