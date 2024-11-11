@@ -63,6 +63,64 @@
                     </p>
                 </div>
             </center>
+
+            <Center>
+                <h2>Lets get in touch...</h2>
+            </Center>
+
+            <form action="sendresults.php" method="post" id="membershipForm">
+                <center>
+				<table>
+					<tr>
+						<td><label for="myName">Name:</label></td>
+						<td><input type="text" name="myName" id="myName" value="Your name here" onfocus="this.value=''"></td>
+					</tr>
+					<tr>
+						<td><label for="myEmail">Email:</label></td>
+						<td><input type="email" name="myEmail" id="myEmail" value="Your email here" onfocus="this.value=''"></td>
+					</tr>
+                    <tr>
+						<td><label for="myName">Enquiry:</label></td>
+						<td><input type="text" name="myEnquiry" id="myEnquiry" value="Your enquiry here" onfocus="this.value=''"></td>
+					</tr>
+					<tr>
+						<td><label for="myProv">Province:</label></td>
+						<td style="text-align: left;"><select name="myProv" id="myProv">
+							<option value="0">Choose..</option>
+							<option value="1">Gauteng</option>
+							<option value="2">KwaZulu-Natal</option>
+							<option value="3">Western Cape</option>
+							<option value="4">Northern Cape</option>
+							<option value="5">Eastern Cape</option>
+							<option value="6">Free State</option>
+							<option value="7">Limpopo</option>
+							<option value="8">Mpumalanga</option>
+							<option value="9">North West</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><label for="myGender">Gender:</label></td>
+						<td style="text-align: left;">
+							<input type="radio" name="myGender" value="Male">Male<br>
+							<input type="radio" name="myGender" value="Female">Female<br>
+							<input type="radio" name="myGender" value="NA">Rather not say
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="reset" value="Clear">
+							<input type="submit" value="Send" onclick="validateForm()">
+						</td>
+					</tr>
+				</table>
+            </center>
+
+			  </form>
+			</article>
+			<article id="col3"></article>
+			<br class="clearFix">
+
         </main>
 
         <footer>
@@ -82,11 +140,49 @@
             <p class="par">
                 <strong>Contact Number</strong> 083-707-8092
             </p>
+            <p>
+				<center><script>
+					var theDate=new Date()
+					document.write("&copy; " + theDate.getFullYear())
+					document.write(" - Man Alive | Last modified: ")
+					var theModifiedDate=new Date(document.lastModified)
+					document.write(theModifiedDate.toDateString())
+				</script></center>
+		    </p>
 
         </footer>
 
     </div>
-
+    
+    <script>
+        // Function that runs when Submit is clicked
+        function validateForm() {
+            // Check that someone has entered a valid name
+            var validateName = document.getElementById("myName").value;
+            if (validateName == "Your name here" || validateName == "") {
+                alert("Please enter your name");
+                return false;
+            }
+    
+            // Check that the email address includes '@' and '.' in it
+            var validateEmail = document.getElementById("myEmail").value;
+            if (!(validateEmail.includes("@") && validateEmail.includes("."))) {
+                alert("Not a valid email format");
+                return false;
+            }
+    
+            // Check that the enquiry box has been filled in
+            var validateEnquiry = document.getElementById("myEnquiry").value;
+            if (validateEnquiry == "Your enquiry here" || validateEnquiry == "") {
+                alert("Please enter your enquiry");
+                return false;
+            }
+    
+            // Confirmation message
+            document.getElementById("col2").innerHTML = "<h2>Thanks for Joining!</h2>";
+        }
+    </script>
+    
 </body>
 
 </html>
